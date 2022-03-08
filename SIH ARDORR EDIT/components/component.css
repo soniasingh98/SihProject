@@ -1,0 +1,34 @@
+.component-container {
+  display: flex;
+  position: relative;
+}
+.component-image {
+  width: 280px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+@media(max-width: 991px) {
+  .component-image {
+    width: 222px;
+    height: 222px;
+  }
+}
+@media(max-width: 479px) {
+  .component-image {
+    flex: 1;
+    left: var(--dl-space-space-twounits);
+    width: 24px;
+    bottom: var(--dl-space-space-twounits);
+    height: 24px;
+    margin: auto;
+    position: absolute;
+    align-self: flex-start;
+    border-color: var(--dl-color-grays-dark100);
+    border-width: 1px;
+    margin-right: auto;
+    border-radius: var(--dl-radius-radius-round);
+    padding-right: 0px;
+    border-top-left-radius: var(--dl-radius-radius-round);
+  }
+}
